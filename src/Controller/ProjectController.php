@@ -34,9 +34,7 @@ class ProjectController extends AbstractController
     #[Route('/toni', name: 'toni')]
     public function toni(): Response
     {
-        return $this->json([
-            'message' => 'redirects to toni\'s page',
-        ]);
+        return $this->render("pages/toni.html.twig");
     }
 
     #[Route('/ebi', name: 'ebi')]
