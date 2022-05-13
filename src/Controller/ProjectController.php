@@ -35,6 +35,10 @@ class ProjectController extends AbstractController
     #[Route('/toni', name: 'toni')]
     public function toni(): Response
     {
+        $info = [
+            'name' => 'Toni',
+            'age' => 35
+        ];
         return $this->render("pages/toni.html.twig");
     }
 
