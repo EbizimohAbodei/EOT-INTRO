@@ -20,7 +20,8 @@ class ProjectController extends AbstractController
     #[Route('/otdot', name: 'otto')]
     public function otdot(): Response
     {
-        return $this->render("pages/otto.html.twig");
+        $teamEOT = ["EOT" => ["otto", "toni", "ebi", "filipp"]];
+        return $this->render("pages/otto.html.twig", ["team_members" => $teamEOT]);
     }
 
     #[Route('/filipp', name: 'filipp')]
