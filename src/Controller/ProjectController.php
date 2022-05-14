@@ -8,20 +8,16 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class ProjectController extends AbstractController
 {
-    #[Route('/homepage', name: 'home')]
+    #[Route('/', name: 'home')]
     public function index(): Response
     {
-        return $this->json([
-            'message' => 'Welcome to your new controller!',
-            'path' => 'src/Controller/ProjectController.php',
-        ]);
+        return $this->render("base.html.twig");
     }
 
     #[Route('/otdot', name: 'otto')]
     public function otdot(): Response
     {
-        $teamEOT = ["EOT" => ["otto", "toni", "ebi", "filipp"]];
-        return $this->render("pages/otto.html.twig", ["team_members" => $teamEOT]);
+        return $this->render("pages/otto.html.twig");
     }
 
     #[Route('/filipp', name: 'filipp')]

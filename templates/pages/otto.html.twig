@@ -1,9 +1,21 @@
 {% extends "base.html.twig" %}
 
+{% block stylesheets %}
+<link rel="stylesheet" href="/css/otto.css">
+{% endblock %}
+
 {% block body %}
-<div> Ottos page </div>
-{% for member in team_members.EOT %}
-    <p> {{ member }} </p>
-{% endfor %}
-<p> </p>
+<div class="card">
+  <img src="https://media-exp1.licdn.com/dms/image/C5603AQFeGQRi9rg14Q/profile-displayphoto-shrink_200_200/0/1567242235174?e=1657756800&v=beta&t=qoKcxZYG0H4nN7kVoQC62sL1VqNq_FBfNwRaGZzWkIo" alt="#" />
+  <div class="infopanel">
+    <p>Name: Otto Mursula</p>
+    <p>Age: 28</p>
+    <p>From: Espoo, Finland</p>
+    <p>Living: Helsinki, Finland</p>
+    <p>
+      Github:
+      <a href="https://github.com/otdot" target="_blank" rel="noreferrer">otdot</a>
+    </p>
+  </div>
+</div>
 {% endblock %}
