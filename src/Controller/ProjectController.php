@@ -11,7 +11,13 @@ class ProjectController extends AbstractController
     #[Route('/', name: 'home')]
     public function index(): Response
     {
-        return $this->render("base.html.twig");
+
+        $profiles = [["name" => "Ebi", "image" => "http://source.unsplash.com/9SSJx7m_Tbs"], 
+                     ["name" => "Filipp", "image" => "http://source.unsplash.com/9SSJx7m_Tbs"], 
+                     ["name" => "Otto", "image" => "https://media-exp1.licdn.com/dms/image/C5603AQFeGQRi9rg14Q/profile-displayphoto-shrink_200_200/0/1567242235174?e=1657756800&v=beta&t=qoKcxZYG0H4nN7kVoQC62sL1VqNq_FBfNwRaGZzWkIo"], 
+                     ["name" => "Toni", "image" => "http://source.unsplash.com/9SSJx7m_Tbs"]];
+
+        return $this->render("base.html.twig", ["profiles" => $profiles]);
     }
 
     #[Route('/otdot', name: 'otto')]
