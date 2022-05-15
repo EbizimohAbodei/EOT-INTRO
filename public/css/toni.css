@@ -1,6 +1,5 @@
 .card {
-  border: 1px solid black;
-  background-color: linear-gradient(to right, black 30%, gray);
+  background: linear-gradient(to right, black 43%, white);
   display: flex;
   height: fit-content;
   margin: 1rem;
@@ -30,4 +29,8 @@
 .link:hover {
   text-decoration: none;
   color: aquamarine;
+}
+
+.infoitem {
+  margin: 1.5rem;
 }
