@@ -8,7 +8,7 @@
   border-top-left-radius: 230px;
 }
 
-img {
+.image {
   height: fit-content;
   border-radius: 50%;
 }
@@ -24,6 +24,7 @@ img {
 .link {
   text-decoration: none;
   color: whitesmoke;
+  padding: 0;
 }
 
 .link:hover {
