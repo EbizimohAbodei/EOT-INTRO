@@ -1,4 +1,32 @@
 .card {
-  border: 2px dotted black;
-  background-color: darkgrey;
+  border: 1px solid black;
+  background-color: linear-gradient(to right, black 30%, gray);
+  display: flex;
+  height: fit-content;
+  margin: 1rem;
+  border-bottom-left-radius: 230px;
+  border-top-left-radius: 230px;
+}
+
+img {
+  height: fit-content;
+  border-radius: 50%;
+}
+
+.infopanel {
+  padding: 3rem;
+  width: 484px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.link {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: aquamarine;
 }
