@@ -41,8 +41,6 @@ class ProjectController extends AbstractController
     #[Route('/ebi', name: 'ebi')]
     public function ebi(): Response
     {
-        return $this->json([
-            'message' => 'redirects to ebi\'s page',
-        ]);
+        return $this->render("pages/ebi.html.twig");
     }
 }
