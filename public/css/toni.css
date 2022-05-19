@@ -1,14 +1,14 @@
 .card {
   background: linear-gradient(to right, black 43%, white);
   display: flex;
-  height: fit-content;
+  height: 350px;
   margin: 1rem;
   border-bottom-left-radius: 230px;
   border-top-left-radius: 230px;
 }
 
 .image {
-  height: fit-content;
+  height: 350px;
   border-radius: 50%;
 }
 
@@ -32,5 +32,5 @@
 }
 
 .infoitem {
-  margin: 1.5rem;
+  margin: 1rem;
 }
